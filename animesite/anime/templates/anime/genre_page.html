@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% load animetags %}
+
+{% block content %}
+
+{% for a in animies %}
+    <li><a href="{{ a.get_absolute_url }}">{{ a.name_ru }}</a></li>
+{% endfor %}
+
+{% endblock content %}
